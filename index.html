@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Field Solutions - Professional Field Research and Data Collection Services">
+    <meta name="keywords" content="field solutions, research, surveys, data collection">
+    <title>Apex Field Solutions</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="sevices.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fs-3 fw-bold">Apex</span>
+                <span class="fs-4 text-danger">Field Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link px-3" href="#"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about"><i class="fas fa-info-circle me-1"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services"><i class="fas fa-cogs me-1"></i> Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#network"><i class="fas fa-project-diagram me-1"></i> Network</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="team.html"><i class="fas fa-users me-1"></i> Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact"><i class="fas fa-envelope me-1"></i> Contact Us</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-outline-light ms-3"><i class="fas fa-moon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Spacer for fixed navbar -->
+   <!-- <div style="height: 76px;"></div> -->
+
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/image11.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold">Accurate Field Research</h1>
+                    <p class="lead">Delivering reliable results with cutting-edge methodology</p>
+                    <a href="#contact" class="btn btn-danger btn-lg mt-2">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/image2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold">Nationwide Coverage</h1>
+                    <p class="lead">Our extensive network reaches every corner of the country</p>
+                    <a href="#network" class="btn btn-danger btn-lg mt-2">Explore Network</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/image3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold">Expert Solutions</h1>
+                    <p class="lead">Customized research approaches for your specific needs</p>
+                    <a href="#services" class="btn btn-danger btn-lg mt-2">Our Services</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">About Us</h2>
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        We undertake large-scale quantitative and qualitative surveys using advanced technology to deliver reliable results across various industries.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Mission Card -->
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/mission.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Illustration of company mission">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title fw-bold text-primary">Our Mission</h3>
+                                    <div class="card-icon mb-3 text-primary">
+                                        <i class="fas fa-bullseye fa-2x"></i>
+                                    </div>
+                                    <p class="card-text">We aim to provide the most accurate survey results through innovation, precision, and the application of cutting-edge methodology to deliver actionable insights.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- Vision Card -->
+                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/vision.jpg" class="img-fluid rounded-start h-100 object-fit-cover" alt="Depiction of company vision">
+                            </div>
+                            <div class="col-md-8">
+                    <div class="card-body">
+                                    <h3 class="card-title fw-bold text-danger">Our Vision</h3>
+                                    <div class="card-icon mb-3 text-danger">
+                                        <i class="fas fa-binoculars fa-2x"></i>
+                                    </div>
+                                    <p class="card-text">To be the leading field solutions provider across diverse sectors, leveraging cutting-edge technology and nationwide coverage to transform data into strategic advantage.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <div id="services" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Services</h2>
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        We provide comprehensive research solutions tailored to your specific industry needs
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="row g-4">
+                <!-- Service Cards -->
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Equity Research</h4>
+                        <p class="service-description">In-depth market analysis and investment opportunities based on solid field data.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-ad"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Advertising Research</h4>
+                        <p class="service-description">Evaluate advertising effectiveness and consumer response to marketing campaigns.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Employee Engagement</h4>
+                        <p class="service-description">Measure and improve workplace satisfaction and productivity through data-driven insights.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Concept Testing</h4>
+                        <p class="service-description">Evaluate new product ideas and concepts with target audience feedback before launch.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">U&A Studies</h4>
+                        <p class="service-description">Understanding usage patterns and attitudes to identify market opportunities and challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Customer Engagement</h4>
+                        <p class="service-description">Measure and enhance customer loyalty through actionable research findings.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Product Testing</h4>
+                        <p class="service-description">Collect detailed consumer feedback on product performance and satisfaction levels.</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-card">
+                        <div class="service-top-border"></div>
+                        <div class="service-icon-container">
+                            <div class="service-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                        </div>
+                        <h4 class="service-title">Market Segmentation</h4>
+                        <p class="service-description">Identify distinct customer groups to tailor products and marketing strategies effectively.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="cta-box bg-dark text-white p-4 rounded text-center">
+                        <h3 class="mb-3">Need a custom research solution?</h3>
+                        <p class="mb-4">Our team can design a specialized research approach tailored to your unique business challenges</p>
+                        <a href="#contact" class="btn btn-danger px-4 py-2">
+                            <i class="fas fa-paper-plane me-2"></i>Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Network Section -->
+    <div id="network" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Network</h2>
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        Nationwide coverage ensuring comprehensive data collection from diverse demographics and regions
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="network-map p-3 shadow-sm rounded">
+                        <img src="images/Our Network.png" class="img-fluid rounded" alt="Network Map">
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+                            <div class="network-stat p-3 shadow-sm rounded">
+                                <h3 class="text-danger mb-0"><i class="fas fa-map-marker-alt me-2"></i> 28</h3>
+                                <p class="mb-0">States Covered</p>
+                            </div>
+                            <div class="network-stat p-3 shadow-sm rounded">
+                                <h3 class="text-danger mb-0"><i class="fas fa-city me-2"></i> 200+</h3>
+                                <p class="mb-0">Cities</p>
+                            </div>
+                            <div class="network-stat p-3 shadow-sm rounded">
+                                <h3 class="text-danger mb-0"><i class="fas fa-users me-2"></i> 500+</h3>
+                                <p class="mb-0">Field Agents</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Contact Us</h2>
+                    <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="divider-custom-line"></div>
+                    </div>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
+                        Have questions or ready to start your research project? Get in touch with our team.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="contact-info p-4 shadow-sm rounded h-100">
+                        <h3 class="mb-4 fw-bold text-primary">Get In Touch</h3>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-paper-plane text-danger"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0">pandanikhil23@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone-alt text-danger"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="mb-0">+91 9004311693</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt text-danger"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Location</h5>
+                                <p class="mb-0">Mumbai, Maharashtra, India</p>
+                            </div>
+                        </div>
+                        
+                        <h5 class="mt-4 mb-3">Connect With Us</h5>
+                        <div class="social-icons d-flex gap-3">
+                            <a href="https://www.facebook.com/" class="social-icon" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="social-icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="social-icon" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" class="social-icon" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+                    <div class="contact-form p-4 shadow-sm rounded">
+                        <h3 class="mb-4 fw-bold text-primary">Send Us A Message</h3>
+                <form name="submit-to-google-sheet">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingName" name="Name" placeholder="Your Name" required>
+                                        <label for="floatingName">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingEmail" name="Email" placeholder="Your Email" required>
+                                        <label for="floatingEmail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingSubject" name="Subject" placeholder="Subject">
+                                        <label for="floatingSubject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="floatingMessage" name="Message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                        <label for="floatingMessage">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-danger btn-lg px-4">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <span id="msg"></span>
+                            </div>
+                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4 class="mb-3">Apex Field Solutions</h4>
+                    <p class="mb-0">Delivering reliable research results with cutting-edge technology</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <p class="mb-0">Copyright © <span id="year"></span> Apex Field Solutions. All rights reserved.</p>
+                    <p>Made with <i class="fas fa-heart text-danger"></i> by Nikhil Panda</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
