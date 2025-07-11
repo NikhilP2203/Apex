@@ -1,184 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apex Field Solutions - Our Professional Team">
-    <meta name="keywords" content="field solutions, research team, experts, professionals">
-    <title>Our Team - Apex Field Solutions</title>
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="team.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team - Apex Field Solutions</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .team-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .team-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-info h5 {
+      margin-bottom: 5px;
+    }
+
+    .team-info small {
+      color: gray;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 8px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fs-3 fw-bold">Apex</span>
-                <span class="fs-4 text-danger">Field Solutions</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html"><i class="fas fa-home me-1"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#about"><i class="fas fa-info-circle me-1"></i> About Us</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#services"><i class="fas fa-cogs me-1"></i> Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#network"><i class="fas fa-project-diagram me-1"></i> Network</a></li>
-                    <li class="nav-item"><a class="nav-link active px-3" href="team.html"><i class="fas fa-users me-1"></i> Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="index.html#contact"><i class="fas fa-envelope me-1"></i> Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Spacer for fixed navbar -->
-    <div style="height: 76px;"></div>
-    
-    <!-- Team Section -->
-    <div id="ourteam" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-6 text-center">
-                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Team</h2>
-                    <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-users"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <p class="lead" data-aos="fade-up" data-aos-delay="100">
-                        Meet our dedicated professionals who make excellence possible
-                    </p>
-                </div>
-            </div>
-            
-            <!-- Team Leader -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team text-center">
-                        <img src="image/Nikhil Formal.jpeg" alt="Nikhil - Technical Head" class="img-fluid">
-                        <h3 class="fw-bold">Nikhil Panda</h3>
-                        <h5 class="text-secondary mb-3">Technical Head</h5>
-                        <div class="layer">
-                            <h3>Technical Head</h3>
-                            <p>A dedicated professional with expertise in implementing cutting-edge technology solutions for field research and data collection.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 mb-3 gap-2">
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Team Members -->
-            <div class="row g-4">
-                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="team text-center">
-                        <img src="image/img2.jpeg" alt="Jane" class="img-fluid">
-                        <h3 class="fw-bold">Jane Smith</h3>
-                        <h5 class="text-secondary mb-3">Research Director</h5>
-                        <div class="layer">
-                            <h3>Research Director</h3>
-                            <p>Leads our research methodologies and ensures all data collection meets rigorous quality standards.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 mb-3 gap-2">
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="team text-center">
-                        <img src="image/img1.jpeg" alt="Jenny" class="img-fluid">
-                        <h3 class="fw-bold">Jenny Wilson</h3>
-                        <h5 class="text-secondary mb-3">Field Operations Manager</h5>
-                        <div class="layer">
-                            <h3>Field Operations Manager</h3>
-                            <p>Coordinates our nationwide team of field agents to ensure efficient and accurate data collection.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 mb-3 gap-2">
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="team text-center">
-                        <img src="image/img3.png" alt="Robert" class="img-fluid">
-                        <h3 class="fw-bold">Robert Chen</h3>
-                        <h5 class="text-secondary mb-3">Data Analytics Lead</h5>
-                        <div class="layer">
-                            <h3>Data Analytics Lead</h3>
-                            <p>Transforms raw field data into meaningful insights using advanced analytics and visualization techniques.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 mb-3 gap-2">
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Join Our Team CTA -->
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up">
-                    <div class="p-4 shadow-sm rounded bg-light">
-                        <h3 class="mb-3 text-primary">Join Our Team</h3>
-                        <p>We're always looking for talented individuals to join our growing team. If you're passionate about field research and data excellence, we'd love to hear from you.</p>
-                        <a href="index.html#contact" class="btn btn-danger px-4 py-2 mt-2">
-                            <i class="fas fa-paper-plane me-2"></i>Get In Touch
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Apex Field Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Spacer -->
+  <div style="height: 70px;"></div>
+
+  <!-- Team Section -->
+  <section class="container py-5">
+    <div class="section-title">
+      <h2 class="fw-bold" data-aos="fade-up">Meet Our Team</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Professionals dedicated to field research excellence.</p>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <h4 class="mb-3">Apex Field Solutions</h4>
-                    <p class="mb-0">Delivering reliable research results with cutting-edge technology</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                    <p class="mb-0">Copyright © <span id="year"></span> Apex Field Solutions. All rights reserved.</p>
-                    <p>Made with <i class="fas fa-heart text-danger"></i> by Nikhil Panda</p>
-                </div>
+    <div class="row g-4">
+      <!-- Nikhil -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="team-card">
+          <img src="image/Nikhil Formal.jpeg" alt="Nikhil Panda">
+          <div class="overlay">
+            <h5>Nikhil Panda</h5>
+            <p>Technical Head with expertise in software solutions and analytics.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
+          </div>
+          <div class="team-info">
+            <h5>Nikhil Panda</h5>
+            <small>Technical Head</small>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
+      <!-- Jenny -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-card">
+          <img src="image/img1.jpeg" alt="Jenny Wilson">
+          <div class="overlay">
+            <h5>Jenny Wilson</h5>
+            <p>Field Operations Manager coordinating team logistics across regions.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Jenny Wilson</h5>
+            <small>Field Operations Manager</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Robert -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-card">
+          <img src="image/img3.png" alt="Robert Chen">
+          <div class="overlay">
+            <h5>Robert Chen</h5>
+            <p>Analytics Lead delivering powerful data insights from raw field reports.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h5>Robert Chen</h5>
+            <small>Data Analytics Lead</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Apex Field Solutions. Made by Nikhil Panda</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
